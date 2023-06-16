@@ -1,0 +1,148 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-image: linear-gradient(45deg, #020405, #11110f);
+    color: aliceblue;
+    font-family: 'Grandiflora One', serif;
+}
+
+/*--Header--*/
+
+#navigation ul li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+
+/*--Introduction--*/
+
+.introduction {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    margin-top: 3rem;
+    
+}
+
+.introduction #col1 {
+    text-align: center;
+    
+}
+
+#col1 h1 {
+    font-family: 'Kablammo', cursive;
+    font-size: 6rem;
+    letter-spacing: 1rem;
+}
+
+@media only screen and (max-width: 760px) {
+    .introduction {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr) ;
+        justify-content: center;
+        align-content: center;
+        margin-top: 2rem;
+    }
+}
+
+/*--Workshops--*/
+
+.workshop {
+    display: grid;
+    height: 31.25rem;
+    margin-top: 4rem;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-content: space-around;
+    gap: 1rem;
+    grid-auto-flow: row dense;
+    background-color: #020405;
+    padding: 0.125rem;
+}
+
+.workshopitems {
+    text-align: center;
+    padding: 0.3125rem;
+}
+
+.workshopitems img {
+    position: relative;
+    
+}
+
+.workshopitems h3 {
+    position: absolute;
+    margin-top: -5rem;
+    text-align: center;
+    background-color: #11110f;
+    padding: 0.625rem;
+    width: 18rem;
+    opacity: 0.8;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 760px) {
+    .workshop {
+        display: grid;
+        height: 31.25rem;
+        margin-top: 2rem;
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: space-between;
+        align-content: space-around;
+        gap: 1rem;
+        grid-auto-flow: row dense;
+    }
+
+    .workshopitems img {
+        position: relative;
+        height: 75%;
+        width: 75%;
+    }
+}
+
+/*--Form Subscription--*/
+
+.form {
+    background-color: #11110f;
+    padding: 0.625rem;
+    margin: 0.5rem auto;
+    width: 35.25rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+input[type=text], input[type=email] {
+    width: 25rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+    border: 1px solid #020405;
+    border-radius: 0.125rem;
+}
+
+button {
+    width: 20rem;
+    height: 3rem;
+    margin-top: 2rem;
+    background-color: aliceblue;
+    border-radius: 0.5rem;
+    
+}
+
+/*--Footer--*/
+
+footer {
+    text-align: center;
+    background-color: #020405;
+    font-weight: 900;
+    margin-top: 1rem;
+    padding: 1.5rem;
+}
+
